@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+
+{% block content %}
+{{ super() }}
+<form action="" method="post" class="form_create_post">
+<p><label>Название:</label> <input type="text" name="heading" value="" required>
+<p><label>Описание:</label> <input type="text" name="description" value="" required>
+<p><input type="submit" value="Создать пост!">
+</form>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+
+{% block content %}
+{{ super() }}
+
+<div class="posts">
+    {% for p in list %}
+        <div class="block_post">
+            <h2>{{p.heading}}</h2>
+            <p>{{p.description}}</p>
+            <p>{{p.date}}</p>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
